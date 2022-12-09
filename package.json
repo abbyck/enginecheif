@@ -5,6 +5,7 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
+    "build": "tsc --project tsconfig.json",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +25,8 @@
   "homepage": "https://github.com/abbyck/enginecheif#readme",
   "dependencies": {
     "matrix-bot-sdk": "^0.6.2"
+  },
+  "devDependencies": {
+    "typescript": "^4.9.4"
   }
 }
