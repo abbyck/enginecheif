@@ -6,6 +6,7 @@
   "main": "app.js",
   "scripts": {
     "build": "tsc --project tsconfig.json",
+    "run": "node ./src/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -27,6 +28,7 @@
     "matrix-bot-sdk": "^0.6.2"
   },
   "devDependencies": {
+    "eslint": "^8.29.0",
     "typescript": "^4.9.4"
   }
 }
