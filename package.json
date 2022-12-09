@@ -5,6 +5,10 @@
   "type": "module",
   "main": "app.js",
   "scripts": {
+    "build": "tsc --project tsconfig.json",
+    "run": "node ./src/app.js",
+    "format": "prettier --write \"src/**/*.ts\"",
+    "lint": "eslint -c .eslintrc.json . --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -24,5 +28,14 @@
   "homepage": "https://github.com/abbyck/enginecheif#readme",
   "dependencies": {
     "matrix-bot-sdk": "^0.6.2"
+  },
+  "devDependencies": {
+    
+    "@typescript-eslint/eslint-plugin": "^5.46.0",
+    "@typescript-eslint/parser": "^5.46.0",
+    "eslint": "^8.29.0",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.8.1",
+    "typescript": "^4.9.4"
   }
 }
